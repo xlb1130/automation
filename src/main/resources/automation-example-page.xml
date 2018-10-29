@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="qhq" operate_delay="1000">
+	<check-flag>1</check-flag>
+	<browser>chrome</browser>
+	<functions>
+		<!-->登录<-->
+		<function name="login" operate-delay="1000">
+			<input name="username" value="admin" find="css" find-text=".login-box-body input:first-of-type"></input>
+			<input name="pass" value="123456" find="css" find-text=".login-box-body input[type=password]" operate-delay="2000"></input>
+			<!--<input name="cust_smscode" value="GrovvySystemConfigEmallContract.groovy" find="id"-->
+				   <!--find-text="cust_smscode" input-type="groovy" operate-delay="2000"></input>-->
+			<!--<checkbox name="confirmAgreement" find="id" find-text="confirmAgreement" oper-type="click" operate-delay="5000"></checkbox>-->
+			<!--<js name="submitOrder" oper-text="submitOrder()" save="css" save-text=".orderSuccess_notic .gray0"></js>-->
+			<!--<hover name="pullDown" find="id" find-text="pullDown" input-type=""  operate-delay="8000"></hover>-->
+			<button name="login" find="id" find-text="login_btn" operate-delay="10000"></button>
+		</function>
+
+		<!-- 菜单点击 -->
+		<!--<function name="menu-click" operate-delay="5000">-->
+			<!--<button name="首页" find="css" find-text=".navbar-nav li:nth-of-type(1) a"></button>-->
+			<!--<button name="灌区一张图" find="css" find-text=".navbar-nav li:nth-of-type(2) a"></button>-->
+		<!--</function>-->
+
+		<!-- 灌溉管理-厅控制引水指标 -->
+		<!--<function name="灌溉管理-厅控制引水指标" operate-delay="5000">-->
+			<!--<button name="灌溉管理" frame="top" find="css" find-text=".navbar-nav li:nth-of-type(3)"></button>-->
+			<!--<button name="厅控制引水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2)"></button>-->
+			<!--<button name="各干渠引水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(1)" operate-delay="15000"></button>-->
+			<!--<button name="各县市干渠直开口用水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(2)" operate-delay="15000"></button>-->
+			<!--<button name="湖泊湿地计划补水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(3)" operate-delay="15000"></button>-->
+			<!--<button name="机井取用浅层地下水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(4)" operate-delay="15000"></button>-->
+			<!--<button name="生态移民项目区用水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(5)" operate-delay="15000"></button>-->
+			<!--<button name="干渠开停灌时间表" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(6)" operate-delay="15000"></button>-->
+			<!--<button name="各干渠逐月引水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(7)" operate-delay="15000"></button>-->
+			<!--<button name="各干渠逐日引水指标" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(7)" operate-delay="15000"></button>-->
+		<!--</function>-->
+
+		<!-- 灌溉管理-需水计划 -->
+		<!--<function name="灌溉管理-需水计划" operate-delay="5000">-->
+			<!--<button name="灌溉管理" frame="top" find="css" find-text=".navbar-nav li:nth-of-type(3)"></button>-->
+			<!--<button name="需水计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3)"></button>-->
+			<!--<button name="需水年计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3) li:nth-of-type(1) " operate-delay="1000"></button>-->
+			<!--<button name="需水年计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3) li:nth-of-type(1) li:nth-of-type(1)" operate-delay="10000"></button>-->
+			<!--<button name="需水旬计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3) li:nth-of-type(2)" operate-delay="1000"></button>-->
+			<!--<button name="需水旬计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3) li:nth-of-type(2) li:nth-of-type(1)" operate-delay="10000"></button>-->
+			<!--<button name="需水天计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3) li:nth-of-type(3)" operate-delay="1000"></button>-->
+			<!--<button name="需水天计划" find="css" find-text=".sidebar-menu > li:nth-of-type(3) li:nth-of-type(3) li:nth-of-type(1)" operate-delay="10000"></button>-->
+		<!--</function>-->
+
+		<function name="工程管理-基本信息-干渠基本信息" operate-delay="5000">
+			<button name="工程管理" frame="top" find="css" find-text=".navbar-nav li:nth-of-type(5)"></button>
+			<button name="基本信息" find="css" find-text=".sidebar-menu > li:nth-of-type(2)"></button>
+			<button name="干渠基本信息" find="css" find-text=".sidebar-menu > li:nth-of-type(2) li:nth-of-type(1) " operate-delay="5000"></button>
+			<button name="新增" frame="mainFrame" find="css" find-text=".btn_con_info > a:nth-of-type(1)" operate-delay="1000"></button>
+			<input name="输入灌溉面积" value="灌溉面积" find="name" find-text="irrigatedArea" operate-delay="1000"></input>
+			<input name="输入渠道名称" value="测试渠道" find="name" find-text="name" operate-delay="5000"></input>
+			<button name="返回" find="css" find-text="form input[type=button]:last-of-type" operate-delay="1000"></button>
+		</function>
+		<!--<button name="实时监控" find="css" find-text=".navbar-nav li:nth-of-type(4)"></button>-->
+		<!--<button name="工程管理" find="css" find-text=".navbar-nav li:nth-of-type(5)"></button>-->
+		<!--<button name="水权交易" find="css" find-text=".navbar-nav li:nth-of-type(6)"></button>-->
+		<!--<button name="系统管理" find="css" find-text=".navbar-nav li:nth-of-type(7)"></button>-->
+	</functions>
+	<index-page>https://www.boze-tech.com/qhq_manager/login.html</index-page>
+</project>
