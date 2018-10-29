@@ -22,9 +22,9 @@
 		<!--<project-ref><value>automation-wap.xml</value></project-ref>-->
 		<!--<project-ref><value>automation-wap_emall.xml</value></project-ref>-->
 		<!--<project-ref><value>automation-mymobile.xml</value></project-ref>-->
-		<project-ref><value>src/main/resources/automation-example-page.xml</value></project-ref>
+		<project-ref><value>automation-example-page.xml</value></project-ref>
 	</projects>
 	<conditions>
-		<conditions-ref><value>src/main/resources/automation-example-condition.xml</value></conditions-ref>
+		<conditions-ref><value>automation-example-condition.xml</value></conditions-ref>
 	</conditions>
 </automation-config>

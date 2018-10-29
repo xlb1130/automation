@@ -65,7 +65,8 @@ public class Init {
 	private static void initConfig() throws FileNotFoundException, IOException{
 		Properties property = new Properties();
 		// 打包发布时需要改为 config.properties
-		property.load(new FileInputStream("src/main/resources/config.properties"));
+		// idea直接运行改为 src/main/resources/config.properties
+		property.load(new FileInputStream("config.properties"));
 		ConfigBean.version = property.getProperty("version");
 		ConfigBean.save_file_path = property.getProperty("save_file_path");
 		ConfigBean.log_file_format = property.getProperty("log_file_format");
@@ -97,7 +98,8 @@ public class Init {
 		SAXReader reader = new SAXReader(); 
 		reader.setEncoding(Constants.C_PUB_PUBLIC_ENCODING_UTF8);
 		// 打包发布时需要改为 automation-config.xml
-		Document document = reader.read(new FileInputStream("src/main/resources/automation-config.xml"));
+		// idea直接运行改为 src/main/resources/automation-config.xml
+		Document document = reader.read(new FileInputStream("automation-config.xml"));
 		document.setXMLEncoding(Constants.C_PUB_PUBLIC_ENCODING_UTF8);
 		Element conditionsEle = (Element) document.getRootElement().elements().get(2);
 		Element projectsEle = (Element) document.getRootElement().elements().get(1);

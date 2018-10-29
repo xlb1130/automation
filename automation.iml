@@ -72,7 +72,6 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.04" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: oracle:ojdbc14:10.2.0.4" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.45" level="project" />
   </component>
 </module>
